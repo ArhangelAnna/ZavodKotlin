@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- панель шагов -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bg_grad2"
+        android:padding="10dp"
+        android:minWidth="85dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/jura_semibold"
+            android:text="Шаги"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/stepsContainer"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- основная часть -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@color/white"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- верхние кнопки -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp">
+
+                <Button
+                    android:id="@+id/btnHintStep"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/jura"
+                    android:textColor="@color/white"
+                    android:text="Где метка?"
+                    android:textSize="10sp"
+
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/d_blue"
+                    app:cornerRadius="8dp" />
+
+                <Button
+                    android:id="@+id/btnInfoAllSteps"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/jura"
+                    android:textColor="@color/white"
+                    android:text="Подробнее"
+                    android:textSize="10sp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/d_blue"
+                    app:cornerRadius="8dp" />
+
+            </LinearLayout>
+
+            <!-- карточка шага -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:elevation="6dp"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/d_blue"
+                    android:fontFamily="@font/jura_semibold"
+                    android:text="@string/step_label"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/d_blue"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/jura"
+                    android:text="Описание шага"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/dynamicContainer"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/inputField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/jura"
+                        android:textColor="@color/d_blue"
+                        android:padding="8dp"
+                        android:background="@drawable/bg_input"
+                        android:hint="Введите данные"
+                        android:inputType="text" />
+
+                    <Button
+                        android:id="@+id/photoBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/d_blue"
+                        android:fontFamily="@font/jura"
+                        android:text="Фото"
+                        android:textAllCaps="false"
+                        app:cornerRadius="12dp" />
+
+                    <EditText
+                        android:id="@+id/commentField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="90dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/d_blue"
+                        android:fontFamily="@font/jura"
+                        android:gravity="top|start"
+                        android:hint="Комментарий"
+                        android:background="@drawable/bg_input2"
+                        android:padding="8dp"
+                        android:includeFontPadding="true"
+                        android:minLines="3"
+                        android:inputType="textMultiLine" />
+
+                    <ImageView
+                        android:id="@+id/photoPreview"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:background="#EEEEEE"
+                        android:layout_marginBottom="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- нижние кнопки -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/backBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/jura"
+                    android:text="Назад"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/d_blue"
+                    app:cornerRadius="12dp" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/confirm"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/jura"
+                    android:text="NFC"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/d_blue"
+                    app:cornerRadius="12dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/jura"
+                android:gravity="center"
+                android:text="@string/nfc_hint"
+                android:textColor="#3F51B5"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

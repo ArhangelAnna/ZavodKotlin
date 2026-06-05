@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="175dp"
+        android:fontFamily="@font/jura_semibold"
+        android:text= "@string/start_label"
+        android:textColor="@color/text_dark_blue"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:src="@drawable/icon_start"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/jura"
+        android:text="Поднесите NFC-метку"
+        android:textColor="@color/text_dark_blue"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tagId"
+        android:text="Ожидание..."
+        android:textColor="#888"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnHint"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/jura"
+        android:textColor="@color/white"
+        android:text="Где метка?"
+        android:backgroundTint="@color/d_blue"
+        app:cornerRadius="8dp"/>
+
+    <TextView
+        android:id="@+id/errorText"
+        android:text=""
+        android:textColor="#D32F2F"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

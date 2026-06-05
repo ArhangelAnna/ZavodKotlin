@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Zavod" parent="Theme.Material3.DayNight.NoActionBar">
+
+
+    </style>
+    <style name="TextH1">
+        <item name="android:textSize">
+            32sp
+        </item>
+    </style>
+    <style name="TextH2">
+        <item name="android:textSize">
+            24sp
+        </item>
+    </style>
+    <style name="TextH5">
+        <item name="android:textSize">
+            16sp
+        </item>
+    </style>
+</resources>

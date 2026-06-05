@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ЗаводКонтроль</string>
+    <string name="info_auth">Приложение для осмотра оборудования</string>
+    <string name="instruct">Инструкция для входа</string>
+    <string name="info_auth1">Войти в систему с помощью табельного номера</string>
+    <string name="info_auth2">Просмотреть какие проверки нужно сделать</string>
+    <string name="info_auth3">Выполнить их!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Инструкция</string>
+    <string name="title_dashboard">Календарь проверок</string>
+    <string name="title_notifications">Ежедневная проверка</string>
+    <string name="title_out">Выход</string>
+    <string name="start_label">Начало проверки</string>
+    <string name="step_label">Шаг</string>
+    <string name="nfc_hint"><![CDATA[Подсказка: ввод -> фото -> NFC]]></string>
+</resources>

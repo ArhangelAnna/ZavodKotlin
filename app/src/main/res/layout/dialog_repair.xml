@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card2"
+    android:gravity="center_horizontal">
+
+    <!-- TITLE -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/jura_semibold"
+        android:text="Заявка на ремонт"
+        android:textColor="#1F1F4D"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- TYPE -->
+    <Spinner
+        android:id="@+id/typeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/custom_spinner"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- PRIORITY -->
+    <Spinner
+        android:id="@+id/prioritySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/custom_spinner"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- COMMENT -->
+    <EditText
+        android:id="@+id/commentField"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_edittext"
+        android:fontFamily="@font/jura"
+        android:hint="категория поломки"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+
+        android:textColor="#1F1F4D"
+        android:textSize="14sp" />
+
+    <!-- SEND -->
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="match_parent"
+        app:cornerRadius="8dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/d_blue"
+        android:elevation="4dp"
+        android:fontFamily="@font/jura_semibold"
+        android:text="Отправить заявку"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+</LinearLayout>

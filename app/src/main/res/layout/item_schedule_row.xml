@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    app:cardElevation="0dp"
+    app:cardCornerRadius="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="12dp"
+        android:background="@color/white"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/tvStatusText"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jura"
+            android:textColor="#4CAF50"
+            android:textSize="10sp"
+            tools:text="статус" />
+
+        <ImageView
+            android:id="@+id/ivStatusIcon"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_toEndOf="@id/tvStatusText"
+            android:layout_marginStart="4dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvTaskName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvStatusText"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/jura_semibold"
+            android:textColor="#1A237E"
+            android:textSize="16sp"
+            tools:text="название" />
+
+        <TextView
+            android:id="@+id/tvEquipmentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/jura"
+            android:textColor="#3F51B5"
+            android:textSize="10sp"
+            tools:text="место расположение" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvTaskName"
+            android:layout_marginTop="12dp"
+            android:background="#E0E0E0" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
