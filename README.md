@@ -684,26 +684,5 @@ app/src/main/java/com/example/zavod
 - [x] Завершить проверку.
 - [x] При необходимости создать заявку на ремонт.
 
----
-
-## Контакты
-
-По вопросам работы приложения можно написать разработчикам в Telegram:
-
-- [@slowwwmint](https://t.me/slowwwmint)
-- [@ArchangelAnna](https://t.me/ArchangelAnna)
-
-<details>
-<summary>Дополнительная контактная информация</summary>
-
-**ВК:**
-
-- [Ельнова Екатерина](https://vk.com/ekaterina_elnova)
-- [Архангельская Анна](https://vk.com/arhangelfly)
-
-**Email:**
-
-- [katakata45882@gmail.com](mailto:katakata45882@gmail.com)
-- [Arhangelsc.nov@yandex.ru](mailto:Arhangelsc.nov@yandex.ru)
 
 </details>
